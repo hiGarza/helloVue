@@ -19,8 +19,8 @@ module.exports = {
     errorOverlay: true,
     notifyOnErrors: true,
     poll: true, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-    aggregateTimeout: 300,
-    ignored: '/node_modules/',
+    aggregateTimeout: 1000,
+    ignored: /node_modules/,
     
     /**
      * Source Maps
