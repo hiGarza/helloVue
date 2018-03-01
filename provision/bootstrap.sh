@@ -11,4 +11,4 @@ cd app
 npm install
 
 #print vm ip address
-ip addr show eth1 | egrep "inet\ " | cut -f1 -d "/" | cut -f2 -d "t"
+# ip addr show eth1 | egrep "inet\ " | cut -f1 -d "/" | cut -f2 -d "t"
