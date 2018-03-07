@@ -1,13 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="container">
+      <b-navbar toggleable="md" type="light" variant="light">
+        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+        <b-navbar-nav>
+          <b-nav-item href="#">Link</b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'APP'
+    }
+  }
 }
 </script>
 
